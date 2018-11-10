@@ -25,6 +25,10 @@ class ViewController: UIViewController {
     @IBAction func didTaponFlashcard(_ sender: Any) {
         frontLabel.isHidden = true
     }
+    func updateFlashcard(question: String, answer: String){
+        frontLabel.text = question
+        backLabel.text = answer
+    }
     
 }
 
